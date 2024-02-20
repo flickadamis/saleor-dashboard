@@ -48,8 +48,10 @@ export const COUNTRIES = {
 };
 export const CUSTOMERS = {
   deleteCustomer: {
-    // id: "VXNlcjoxNzM=",
     id: "VXNlcjo5MTA=",
+  },
+  editCustomer: {
+    id: "VXNlcjo0Mjg=",
   },
 };
 export const CUSTOMER_ADDRESS = {
@@ -76,6 +78,17 @@ export const CUSTOMER_ADDRESS = {
     country: "Poland",
   },
   createCustomerAddress: {
+    firstName: "Create customer address",
+    lastName: "Automation",
+    companyName: "Saleor",
+    phone: "123456789",
+    addressLine1: "Teczowa",
+    addressLine2: "7",
+    cityName: "WROCLAW",
+    zip: "53-601",
+    country: "Poland",
+  },
+  editCustomerAddress: {
     firstName: "Create customer address",
     lastName: "Automation",
     companyName: "Saleor",

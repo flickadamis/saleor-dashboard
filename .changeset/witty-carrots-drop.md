@@ -2,4 +2,4 @@
 "saleor-dashboard": minor
 ---
 
-Add playwirigth tests for creating customer
+Add playwright tests for creating customer

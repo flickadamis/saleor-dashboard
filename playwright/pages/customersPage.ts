@@ -1,8 +1,8 @@
 import { URL_LIST } from "@data/url";
 import { Page, expect } from "@playwright/test";
-import { AddressForm, customerAddress} from "@forms/addressForm";
+import { AddressForm, customerAddress } from "@forms/addressForm";
 import { BasePage } from "@pages/basePage";
-import { DeleteDialog } from '@dialogs/deleteDialog';
+import { DeleteDialog } from "@dialogs/deleteDialog";
 import { IssueGiftCardDialog } from "@dialogs/issueGiftCardDialog";
 import { AddressDialog } from "@dialogs/addressDialog";
 
@@ -38,7 +38,7 @@ export class CustomersPage extends BasePage {
     this.addressForm = new AddressForm(page);
     this.deleteDialog = new DeleteDialog(page);
     this.issueGiftCardDialog = new IssueGiftCardDialog(page);
-    this.addressDialog = new AddressDialog(page)
+    this.addressDialog = new AddressDialog(page);
   }
 
   async goToCustomersListView() {
@@ -53,7 +53,7 @@ export class CustomersPage extends BasePage {
   async clickOnCreateCustomer() {
     await this.createCustomerButton.click();
   }
-  async fillName(firstName: string, lastName: string) {
+  async fillFirstAndLastName(firstName: string, lastName: string) {
     await this.customerFirstNameInput.fill(firstName, { timeout: 1000000 });
     await this.customerLastNameInput.fill(lastName);
   }
@@ -82,6 +82,6 @@ export class CustomersPage extends BasePage {
     await this.showMoreMenuButton.click();
   }
   async clickEditAddress() {
-    await this.editAddressButton.click()
+    await this.editAddressButton.click();
   }
 }
